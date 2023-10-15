@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+nav {
+    background-color:#ffe599;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo p {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 120px; 
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.content.galeri h1 {
+    background-color: #fff;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quadrate {
+    width: 15px;
+    height: 15px;
+    background: #333;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.quadrate.active {
+    background: #fff;
+}
+
+.clearfix {
+    clear: both;
+    float:none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.content .container {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+footer {
+    background-color: #ffe599;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.contenedores{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.contenedores .contenedor-izquierdo {
+    width: 80%; /* 80% del ancho de la pantalla */
+    height: 30vh; /* 50% de la altura de la ventana gráfica */
+    background-color: #E26A86;
+    padding: 20px;
+}
+
+.titulo{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor derecho */
+.contenedores .contenedor-derecho {
+    width: 80%; /* 80% del ancho de la pantalla */
+    height: 30vh; /* 50% de la altura de la ventana gráfica */
+    background-color: #E26A86;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.item {
+    flex: 1; /* Cada elemento ocupará el mismo espacio en la línea */
+    text-align: center;
+}
+
+.imagenes{
+    overflow-y: auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+/* Estilo para las imágenes dentro de los contenedores */
+.imagen {
+    max-width: 20%;
+    height: auto;
+}
+
+
+/* Estilos adicionales según tus preferencias */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
