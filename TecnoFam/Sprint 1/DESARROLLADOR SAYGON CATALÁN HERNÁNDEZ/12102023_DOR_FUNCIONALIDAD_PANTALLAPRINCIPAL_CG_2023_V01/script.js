@@ -1,33 +1,24 @@
-document.getElementById("showMissionForm").addEventListener("click", function () {
-    document.getElementById("missionForm").style.display = "block";
-    const missionText = localStorage.getItem("missionText");
-    document.getElementById("newMissionText").value = missionText || "";
-});
+let slideIndex = 1;
+showSlides(slideIndex)
 
-document.getElementById("saveMissionButton").addEventListener("click", function () {
-    const newMissionText = document.getElementById("newMissionText").value;
-    if (/^[A-Za-záéíóúÁÉÍÓÚüÜ,.ñÑ\s]+$/.test(newMissionText)) {
-        document.getElementById("missionText").textContent = newMissionText;
-        localStorage.setItem("missionText", newMissionText);
-        document.getElementById("missionForm").style.display = "none";
-    } else {
-        alert("Por favor, elimine los caracteres no permitidos del campo de Misión antes de guardar.");
+function plusSlides(n){
+    showSlides(slideIndex += n)
+}
+function currentSlide(n){
+    showSlides(slideIndex = n)
+}
+function showSlides(n){
+    let i;
+    let slides = document.querySelectorAll(".mySlides");
+    let quadrates = document.querySelectorAll(".quadrate"); 
+    if(n > slides.length) slideIndex = 1
+    if(n < 1) slideIndex = slides.length
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none"
     }
-});
-
-document.getElementById("showVissionForm").addEventListener("click", function () {
-    document.getElementById("vissionForm").style.display = "block";
-    const vissionText = localStorage.getItem("vissionText");
-    document.getElementById("newVissionText").value = vissionText || "";
-});
-
-document.getElementById("saveVissionButton").addEventListener("click", function () {
-    const newVissionText = document.getElementById("newVissionText").value;
-    if (/^[A-Za-záéíóúÁÉÍÓÚüÜ,.ñÑ\s]+$/.test(newVissionText)) {
-        document.getElementById("vissionText").textContent = newVissionText;
-        localStorage.setItem("vissionText", newVissionText);
-        document.getElementById("vissionForm").style.display = "none";
-    } else {
-        alert("Por favor, elimine los caracteres no permitidos del campo de Visión antes de guardar.");
+    for(i = 0; i < quadrates.length;i++){
+        quadrates[i].className = quadrates[i].className.replace("active","")
     }
-});
+    slides[slideIndex-1].style.display = "block";
+    quadrates[slideIndex-1].className += " active";
+}

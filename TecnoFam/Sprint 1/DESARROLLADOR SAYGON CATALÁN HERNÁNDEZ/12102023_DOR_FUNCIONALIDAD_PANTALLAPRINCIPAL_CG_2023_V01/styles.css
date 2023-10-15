@@ -175,6 +175,50 @@ footer {
     padding: 10px;
     width: 100%;
 }
+.contenedores{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.contenedores .contenedor-izquierdo {
+    width: 80%; /* 80% del ancho de la pantalla */
+    height: 35vh; /* 35% de la altura de la ventana gráfica */
+    background-color: #E26A86;
+    padding: 15px;
+}
+
+.titulo{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor derecho */
+.contenedores .contenedor-derecho {
+    width: 80%; /* 80% del ancho de la pantalla */
+    height: 35vh; /* 35% de la altura de la ventana gráfica */
+    background-color: #E26A86;
+    margin-left: auto;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.item {
+    flex: 1; /* Cada elemento ocupará el mismo espacio en la línea */
+    text-align: center;
+}
+
+.imagenes{
+    overflow-y: auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+/* Estilo para las imágenes dentro de los contenedores */
+.imagen {
+    max-width: 20%;
+    height: auto;
+}
 
 
 /* Estilos adicionales según tus preferencias */
