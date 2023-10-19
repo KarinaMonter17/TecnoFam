@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Registro</h2>
+        <img src="assets/img/logo.png" alt="Logo" class="logo">
+
+        <div class="column">
+            <h4>Datos del adulto mayor</h4>
+            <div class="nombre">
+                <div class="row">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre(s)">
+                </div>
+                <div class="row">
+                    <input type="text" id="apellido" name="apellido" required placeholder="Apellidos">
+                </div>
+            </div>
+            <div class="datos">
+                <div class="row">
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+                </div>
+                <div class="row">
+                    <input type="email" id="email" name="email" required placeholder="Correo eletrónico">
+                </div>
+            </div>
+        </div>
+    <div class="tutor">
+        <div class="column">
+            <h4>Datos del tutor</h4>
+            <div class="row">
+                <input type="text" id="nombre_tutor" name="nombre_tutor" required placeholder="Nombre del tutor">
+            </div>
+            <div class="row">
+                <input type="text" id="telefono_tutor" name="telefono_tutor" placeholder="Teléfono del tutor">
+            </div>
+            <div class="row">
+                <input type="adress" id="adress" name="adress" required placeholder="Dirección">
+            </div>
+        </div>
+
+        <div class="checkbox-row">
+            <h4>¿Gusta inscribirse a un taller?</h4>
+            <br>
+            <label for="preferencia1"><input type="checkbox" id="preferencia1" name="preferencia1"> Danza</label><br>
+            <label for="preferencia2"><input type="checkbox" id="preferencia2" name="preferencia2"> Pintura</label><br>
+            <label for="preferencia3"><input type="checkbox" id="preferencia3" name="preferencia3"> Cocina</label><br>
+            <label for="preferencia4"><input type="checkbox" id="preferencia4" name="preferencia4"> Ninguna</label>
+        </div>
+    </div>
+        <button type="submit" class="submit-button">Guardar</button>
+        <p></p>Ya cuentas con un registro <a href="loginusuario.html">Iniciar sesión</a><p>
+    </div>
+</body>
+</html>
