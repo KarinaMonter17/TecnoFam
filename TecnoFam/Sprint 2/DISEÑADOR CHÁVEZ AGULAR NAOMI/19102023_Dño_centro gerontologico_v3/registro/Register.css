@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    background-color: #FFE599;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Estilos para el logotipo */
+.logo {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilos para organizar los campos en dos columnas */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column .nombre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column .datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tutor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row label {
+    width: 150px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.row input, .row select {
+    flex: 1;
+    padding: 5px;
+}
+
+.checkbox-row {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.checkbox-row label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #E26A86;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
