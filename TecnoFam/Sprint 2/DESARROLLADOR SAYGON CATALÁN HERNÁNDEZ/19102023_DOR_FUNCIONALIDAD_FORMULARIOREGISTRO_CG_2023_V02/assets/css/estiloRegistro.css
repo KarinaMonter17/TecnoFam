@@ -25,8 +25,9 @@ html, body {
 
 /* Estilos para el logotipo */
 .logo {
-    max-width: 100px;
-    margin: 0 auto;
+    max-width: 170px;
+    margin: 15px auto;
+    border-radius: 5px;
     display: block;
 }
 
@@ -93,4 +94,21 @@ html, body {
 
 .submit-button:hover {
     background-color: #0056b3;
+}
+
+.message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 9999;
+    width: 250px;
+    display: none;
+}
+#error-message {
+    background: #ff0000;
 }
