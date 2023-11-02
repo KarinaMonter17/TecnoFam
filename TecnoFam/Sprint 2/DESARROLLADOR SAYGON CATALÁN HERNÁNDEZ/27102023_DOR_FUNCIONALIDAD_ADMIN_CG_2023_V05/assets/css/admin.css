@@ -1,0 +1,165 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+nav {
+    background-color:#ffe599;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo p {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 120px; 
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 2%;
+    margin-left: 35%;
+    background-color: #ffe599;
+    text-align: center;
+    width: 400px; /* Ajusta el ancho del contenedor según tus necesidades */
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.image {
+    width: 170px; /* Ajusta el ancho de la imagen */
+    height: auto;
+}
+
+.input-container {
+    position: relative;
+    margin: 5px 0;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"] {
+    width: 80%;
+    padding: 10px;
+}
+
+.input-container select {
+    width: 35%;
+    padding: 10px;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button {
+    width:85%;
+    background-color: #E26A86; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.image-container a {
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.image-container img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: 30px;
+}
+
+.image-container h4{
+    text-align: center;
+    color: #000;
+}

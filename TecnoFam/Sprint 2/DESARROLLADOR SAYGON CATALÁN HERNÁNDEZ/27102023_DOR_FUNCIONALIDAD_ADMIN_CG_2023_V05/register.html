@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/registro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/iconos/icono.png">
+    <title>Centro Gerontológico integral</title>
+</head>
+<body>
+    <!-- Formulario de registro -->
+    <div class="container">
+    <form action="registrar.php" method="post" onsubmit="return validarFormulario()"> <!-- Funcionalidad para guardadr los datos con el metodo post--> 
+        <h2 class="title">Registro</h2>
+        <img src="assets/iconos/icono.png" alt="Logo" class="logo1">
+
+        <div class="column">
+            <h4>Datos del adulto mayor</h4>
+            <div class="nombre">
+                <div class="row">
+                    <input type="text" id="nombre" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+" required placeholder="Nombre(s)">
+                </div>
+                <div class="row">
+                    <input type="text" id="apellido" name="apellido" pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+" required placeholder="Apellidos">
+                </div>
+            </div>
+            <div class="datos">
+                <div class="row">
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Teléfono (10 dígitos)">
+                </div>
+                <div class="row">
+                    <input type="email" id="email" name="email" required placeholder="Correo eletrónico">
+                </div>
+            </div>
+        </div>
+    <div class="tutor">
+        <div class="column">
+            <h4>Datos del tutor</h4>
+            <div class="row">
+                <input type="text" id="nombre_tutor" name="nombre_tutor" pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+" required placeholder="Nombre del tutor">
+            </div>
+            <div class="row">
+                <input type="tel" id="telefono_tutor" name="telefono_tutor" pattern="[0-9]{10}" placeholder="Teléfono del tutor (10 dígitos)">
+            </div>
+            <div class="row">
+                <input type="text" id="address" name="address" pattern="[A-Za-0-9-záéíóúÁÉÍÓÚüÜñÑ\s]+" required placeholder="Dirección">
+            </div>
+        </div>
+
+        <div class="checkbox-row">
+            <h4>¿Gusta inscribirse a un taller?</h4>
+            <br>
+            <label for="danza"><input type="checkbox" id="danza" name="danza"> Danza</label><br>
+            <label for="pintura"><input type="checkbox" id="pintura" name="pintura"> Pintura</label><br>
+            <label for="cocina"><input type="checkbox" id="cocina" name="cocina"> Cocina</label><br>
+            <label for="ninguno"><input type="checkbox" id="ninguno" name="ninguno"> Ninguna</label>
+        </div>
+    </div>
+        <button type="submit" class="submit-button">Guardar</button>
+        <p></p>Ya cuentas con un registro <a href="login.html">Iniciar sesión</a><p>
+    </form>
+    </div> 
+    <div id="success-message" class="message">¡Registro exitoso!</div>
+    <div id="error-message" class="message">¡Hubo un error!</div>
+        
+    <script>
+        var urlParams = new URLSearchParams(location.search);
+        if (urlParams.get('success') === '1') {
+            var successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 5000); // 5000 milisegundos = 5 segundos
+        } else if (urlParams.get('success') === '0') {
+            var errorMessage = document.getElementById('error-message');
+            errorMessage.style.display = 'block';
+            setTimeout(function() {
+                errorMessage.style.display = 'none';
+            }, 5000); // 5000 milisegundos = 5 segundos
+        }
+
+        function validarFormulario() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var noneCheckbox = document.getElementById('ninguno');
+        var alMenosUnCheckboxMarcado = false;
+
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+                alMenosUnCheckboxMarcado = true;
+            }
+        });
+
+        if (!alMenosUnCheckboxMarcado && !noneCheckbox.checked) {
+            alert('Debes seleccionar al menos un taller o marcar "Ninguna" antes de guardar.');
+            return false; // Evita que el formulario se envíe
+        }
+
+        return true; // Permite que el formulario se envíe si al menos un checkbox está marcado
+    }
+
+        // Agrega un evento para validar las selecciones de talleres antes del envío del formulario
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var noneCheckbox = document.getElementById('ninguno');
+
+        noneCheckbox.addEventListener('change', function() {
+            if (noneCheckbox.checked) {
+                // Si "Ninguna" se marca, desmarca las otras opciones
+                checkboxes.forEach(function(checkbox) {
+                    if (checkbox !== noneCheckbox) {
+                        checkbox.checked = false;
+                    }
+                });
+            }
+        });
+
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                if (checkbox !== noneCheckbox && checkbox.checked) {
+                    // Si se marca otra opción, desmarca "Ninguna"
+                    noneCheckbox.checked = false;
+                }
+            });
+        });
+
+    </script>     
+      
+</body>
+</html>
