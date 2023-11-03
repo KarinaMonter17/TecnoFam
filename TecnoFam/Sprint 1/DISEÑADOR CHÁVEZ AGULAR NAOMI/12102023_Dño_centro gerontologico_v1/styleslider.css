@@ -1,21 +1,27 @@
-body{
-  background-color: #E26A86;
+/* Estilo para el fondo del cuerpo de la página */
+body {
+  background-color: #E26A86; /* Define el color de fondo del cuerpo de la página */
 }
+
+/* Estilos para la presentación de diapositivas Swiper */
 .swiper {
-    width: 80%;
-    height: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+  width: 80%; /* Establece el ancho del contenedor Swiper al 80% del ancho del padre */
+  height: 100%; /* Establece la altura del contenedor Swiper al 100% de la altura del padre */
+  margin-top: 40px; /* Agrega un margen superior de 40 píxeles */
+  margin-bottom: 40px; /* Agrega un margen inferior de 40 píxeles */
+}
 
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-  }
+/* Estilos para las diapositivas de la presentación Swiper */
+.swiper-slide {
+  background-position: center; /* Alinea el fondo de la diapositiva al centro */
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente la diapositiva */
+  width: 400px; /* Establece el ancho de cada diapositiva en 400 píxeles */
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004);
-  }
+/* Estilos para las imágenes dentro de las diapositivas */
+.swiper-slide img {
+  display: block; /* Establece la propiedad de visualización de la imagen en "block" para ocupar todo el ancho disponible */
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004); 
+  /* Agrega un reflejo a las imágenes en navegadores webkit (como Safari y Chrome) */
+}
