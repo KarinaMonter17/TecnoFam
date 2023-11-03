@@ -1,9 +1,11 @@
+/* Estilo global para todos los elementos */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Estilo para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,8 +13,9 @@ body {
     background-color: #f1f1f1;
 }
 
+/* Estilo para la barra de navegación */
 nav {
-    background-color:#ffe599;
+    background-color: #ffe599;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -20,12 +23,14 @@ nav {
     padding: 10px 20px;
 }
 
+/* Estilo para el icono de menú desplegable */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
+/* Estilo para las barras del icono de menú */
 .menu-toggle span {
     background-color: black;
     width: 30px;
@@ -34,6 +39,7 @@ nav {
     transition: 0.4s;
 }
 
+/* Estilos para las barras del icono de menú cuando está activo */
 .menu-toggle.active span:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -46,6 +52,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* Estilo para el logotipo y texto del encabezado */
 .logo {
     display: flex;
     align-items: center;
@@ -67,7 +74,7 @@ nav {
 }
 
 .logo img {
-    width: 120px; 
+    width: 120px;
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
@@ -75,6 +82,7 @@ nav {
     font-weight: bold;
 }
 
+/* Estilos para la lista de navegación */
 .menu {
     list-style: none;
     display: flex;
@@ -91,6 +99,7 @@ nav {
     font-weight: bold;
 }
 
+/* Estilo para la sección de la galería */
 .content.galeri h1 {
     background-color: #fff;
     font-size: 28px;
@@ -99,14 +108,19 @@ nav {
     margin-bottom: 40px;
 }
 
+/* Estilos para las diapositivas de la galería 
+(no se usa en este CSS, podría ser parte de un 
+archivo adicional) */
 .mySlides {
     display: none;
 }
 
 .mySlides img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width: 100%;
 }
 
+/* Estilos para los botones "Anterior" y 
+"Siguiente" en la galería */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -127,6 +141,8 @@ nav {
     right: 0;
 }
 
+/* Estilos para los elementos de navegación 
+de la galería (cuadrados pequeños) */
 .elements {
     display: flex;
     justify-content: center;
@@ -147,11 +163,13 @@ nav {
     background: #fff;
 }
 
+/* Estilo para limpiar elementos flotantes */
 .clearfix {
     clear: both;
-    float:none;
+    float: none;
 }
 
+/* Estilos para el contenido principal de la página */
 .content {
     display: flex;
     justify-content: center;
@@ -161,13 +179,14 @@ nav {
     background-color: #fff;
 }
 
+/* Estilos para los contenedores de contenido */
 .content .container {
     width: 30%;
     padding: 10px;
     border: 1px solid #ccc;
-    
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: #ffe599;
     color: #000000;
