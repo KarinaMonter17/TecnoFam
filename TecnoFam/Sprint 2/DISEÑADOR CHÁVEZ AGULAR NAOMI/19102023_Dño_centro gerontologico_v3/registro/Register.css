@@ -1,3 +1,4 @@
+/* Establece la altura de html y body al 100% y los centra vertical y horizontalmente */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,89 +9,100 @@ html, body {
 
 /* Estilos para el contenedor del formulario */
 .container {
-    background-color: #FFE599;
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
+    background-color: #FFE599; /* Fondo de color amarillo claro */
+    width: 100%; /* Ancho del 100% de su contenedor */
+    border: 1px solid #ccc; /* Borde delgado */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Texto centrado horizontalmente */
 }
 
 /* Estilos para el título */
 .title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 24px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido */
+    text-align: center; /* Texto centrado horizontalmente */
 }
-
 
 /* Estilos para el logotipo */
 .logo {
-    max-width: 100px;
-    margin: 0 auto;
-    display: block;
+    max-width: 100px; /* Ancho máximo de 100px */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Muestra el logotipo como bloque */
 }
 
 /* Estilos para organizar los campos en dos columnas */
 .column {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza elementos en columna */
 }
 
-.column .nombre{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.column .datos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.tutor{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 40px;
+/* Estilos para los campos de nombre dentro de las columnas */
+.column .nombre {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
+/* Estilos para los campos de datos dentro de las columnas */
+.column .datos {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para la sección de información del tutor */
+.tutor {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-right: 40px; /* Margen derecho para separar del contenido adyacente */
+}
+
+/* Estilos para las filas que contienen etiquetas y campos de entrada */
 .row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 10px; /* Margen inferior para separar filas */
 }
 
+/* Estilos para las etiquetas de las filas */
 .row label {
-    width: 150px;
-    padding-right: 10px;
-    text-align: right;
+    width: 150px; /* Ancho fijo para etiquetas */
+    padding-right: 10px; /* Espaciado a la derecha */
+    text-align: right; /* Alineación del texto a la derecha */
 }
 
+/* Estilos para los campos de entrada y selección en las filas */
 .row input, .row select {
-    flex: 1;
-    padding: 5px;
+    flex: 1; /* Ocupa el espacio restante en la fila */
+    padding: 5px; /* Espaciado interior */
 }
 
+/* Estilos para la fila de casillas de verificación */
 .checkbox-row {
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
+    margin-top: 10px; /* Margen superior para separar del contenido superior */
+    margin-left: 20px; /* Margen izquierdo para alinear con el contenido adyacente */
+    text-align: left; /* Alineación del texto a la izquierda */
 }
 
+/* Estilos para las etiquetas de las casillas de verificación */
 .checkbox-row label {
-    display: inline-block;
-    margin-right: 10px;
+    display: inline-block; /* Muestra las etiquetas en línea */
+    margin-right: 10px; /* Margen derecho para separar etiquetas */
 }
 
+/* Estilos para el botón de envío del formulario */
 .submit-button {
-    background-color: #E26A86;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 80%;
+    background-color: #E26A86; /* Fondo de color rosa */
+    color: #000000; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    margin-top: 10px; /* Margen superior para separar del contenido superior */
+    width: 80%; /* Ancho del 80% de su contenedor */
 }
 
+/* Estilos para el botón de envío cuando el cursor pasa sobre él */
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cambia el fondo de color cuando se pasa el cursor */
 }
