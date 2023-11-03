@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a tu archivo CSS de estilos -->
     <link rel="stylesheet" href="inicio/styles.css">
+    <!-- Enlace al archivo CSS de la biblioteca Swiper para el slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Icono de la pestaña del navegador -->
     <link rel="shortcut icon" href="/assets/img/icono.png">
     <title>Centro Gerontológico integral</title>
 </head>
 <body>
+    <!-- Barra de navegación -->
     <nav>
+        <!-- Botón para abrir o cerrar el menú en dispositivos móviles -->
         <div class="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
+        <!-- Logo y texto del encabezado de la página -->
         <div class="logo">
             <img src="assets/img/logo.png">
             <div>
@@ -23,108 +29,74 @@
                 <p>Horarios de 10:00 am a 03:00 pm</p>
             </div>
         </div>
+        <!-- Menú de navegación con enlaces a otras páginas -->
         <ul class="menu">
             <li><a href="home.html">Inicio</a></li>
             <li><a href="Taller.html">Talleres y servicios</a></li>
             <li><a href="login.html">Iniciar sesión</a></li>
-            <li><a href="Register.html">Registrarse</a></li>           
+            <li><a href="Register.html">Registrarse</a></li>
         </ul>
     </nav>
+    <!-- Contenedor para el contenido principal -->
     <div class="content">
-            <div class="galeri">
-                <h1>Galería</h1>
-            </div>
+        <!-- Título de la sección de la galería -->
+        <div class="galeri">
+            <h1>Galería</h1>
+        </div>
     </div>
+    <!-- Enlace al archivo CSS específico para el slider -->
     <link rel="stylesheet" href="inicio/styleslider.css">
+    <!-- Contenedor para el slider de imágenes -->
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="slider/img3.jpg" alt="">
+        <div class="swiper-wrapper">
+            <!-- Diapositivas del slider con imágenes -->
+            <div class="swiper-slide">
+                <img src="slider/img3.jpg" alt="">
+            </div>
+            <!-- Otras diapositivas con imágenes -->
+            <!-- ... -->
         </div>
-        <div class="swiper-slide">
-          <img src="slider/img4.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img6.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img7.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img8.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img9.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img10.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img11.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="slider/img12.jpg" alt="">
-        </div>
-  
-        <!-- 15 div -->
-      
-      </div>
     </div>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 15,
-            stretch: 0,
-            depth: 300,
-            modifier: 1,
-            slideShadows: true,
-          },
-          loop: true,
-        });
-      </script>
+    <!-- Script para inicializar el slider Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 15,
-          stretch: 0,
-          depth: 300,
-          modifier: 1,
-          slideShadows: true,
-        },
-        loop: true,
-        autoplay: {
-          delay: 3000, // 3000 milisegundos (3 segundos) entre diapositivas
-          disableOnInteraction: false, // Permite que el autoplay continúe después de la interacción del usuario
-        },
-      });
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 15,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000, // 3000 milisegundos (3 segundos) entre diapositivas
+                disableOnInteraction: false, // Permite que el autoplay continúe después de la interacción del usuario
+            },
+        });
     </script>
-
+    <!-- Div vacío para limpiar el flujo de contenido -->
     <div class="clearfix"></div>
-   
+    <!-- Contenido adicional con contenedores y texto -->
     <div class="content">
+        <!-- Contenedor 1 con un título y texto -->
         <div class="container">
             <h2>Misión</h2>
             <p>Nuestra misión es proporcionar a las personas adultas mayores atención gerontológica integral, y mejorar las condiciones de vida, fomentando la integración, participación y desarrollo social en la vejez.</p>
         </div>
+        <!-- Contenedor 2 con un título y texto -->
         <div class="container">
-          <h2>Misión</h2>
-          <p>Nuestra misión es proporcionar a las personas adultas mayores atención gerontológica integral, y mejorar las condiciones de vida, fomentando la integración, participación y desarrollo social en la vejez.</p>
-      </div>
+            <h2>Misión</h2>
+            <p>Nuestra misión es proporcionar a las personas adultas mayores atención gerontológica integral, y mejorar las condiciones de vida, fomentando la integración, participación y desarrollo social en la vejez.</p>
+        </div>
     </div>
+    <!-- Pie de página -->
     <footer>
-        Carretera Mexico- Laredo s/n, esq, con av. Insurgentes,instalaciones del antiguo patrimonio, Ixmiquilpan, Hgo., Ixmiquilpan, Mexico, 42300
+        Carretera Mexico-Laredo s/n, esq, con av. Insurgentes, instalaciones del antiguo patrimonio, Ixmiquilpan, Hgo., Ixmiquilpan, Mexico, 42300
     </footer>
-
 </body>
 </html>
