@@ -5,41 +5,41 @@ body {
     margin: 0;
 }
 
-
 nav {
-    background-color:#ffe599;
-    color: #fff;
+    background-color: #ffe599; /* Fondo del menú de navegación */
+    color: #fff; /* Color del texto en el menú de navegación */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Espaciado interno en el menú de navegación */
 }
 
-
 .menu-toggle {
-    display: none;
+    display: none; /* Inicialmente oculta el icono del menú desplegable */
     flex-direction: column;
     cursor: pointer;
 }
 
 .menu-toggle span {
-    background-color: black;
+    background-color: black; /* Color de las barras del icono de menú */
     width: 30px;
     height: 3px;
     margin: 3px 0;
-    transition: 0.4s;
+    transition: 0.4s; /* Transición suave para las barras al abrir el menú */
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px); 
+    /* Efecto de rotación y posición de la primera barra al abrir el menú */
 }
 
 .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Oculta la segunda barra al abrir el menú */
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px); 
+    /* Efecto de rotación y posición de la tercera barra al abrir el menú */
 }
 
 .logo {
@@ -63,7 +63,7 @@ nav {
 }
 
 .logo img {
-    width: 120px; 
+    width: 120px; /* Tamaño del logo */
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
@@ -77,51 +77,50 @@ nav {
 }
 
 .menu li {
-    margin: 0 20px;
+    margin: 0 20px; /* Espacio entre elementos del menú */
 }
 
 .menu a {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: black; /* Color del texto del menú */
     font-weight: bold;
 }
 
 .container {
-    margin-top: 10%;
-    margin-left:30%;
-    background-color: #FFE599;
+    margin-top: 10%; /* Espacio en la parte superior del contenedor */
+    margin-left: 30%; /* Espacio a la izquierda del contenedor */
+    background-color: #ffe599; /* Fondo del contenedor */
     text-align: center;
-    width: 500px; /* Puedes ajustar el tamaño del contenedor cuadrado según tus necesidades */
-    border: 2px solid #000;
-
+    width: 500px; /* Ancho del contenedor */
+    border: 2px solid #000; /* Borde del contenedor */
 }
 
 .title {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 20px; /* Tamaño de fuente del título */
+    margin: 10px 0; /* Espacio alrededor del título */
 }
 
 .image-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px; /* Espaciado interno en el contenedor de imágenes */
 }
 
 .image-container a {
-    flex: 1;
-    margin: 0 5px;
-    text-decoration: none;
+    flex: 1; /* Los elementos de imagen ocupan el mismo espacio horizontalmente */
+    margin: 0 5px; /* Espacio entre elementos de imagen */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
 .image-container img {
-    max-width: 70%;
+    max-width: 70%; /* Ancho máximo de las imágenes */
     height: auto;
     display: block;
-    margin-left: 30px;
+    margin-left: 30px; /* Espacio a la izquierda de las imágenes */
 }
 
-.image-container h4{
+.image-container h4 {
     text-align: center;
-    color: #000;
+    color: #000; /* Color del texto */
 }
