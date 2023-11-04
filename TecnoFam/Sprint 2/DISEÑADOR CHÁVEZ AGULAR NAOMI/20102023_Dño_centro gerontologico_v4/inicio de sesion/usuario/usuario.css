@@ -2,43 +2,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ajusta la altura al 100% de la ventana gráfica */
     margin: 0;
 }
 
 .container {
-    
-    background-color: #ffe599;
+    background-color: #ffe599; /* Fondo del contenedor */
     text-align: center;
     width: 400px; /* Ajusta el ancho del contenedor según tus necesidades */
-    border: 2px solid #000;
-    padding: 20px;
+    border: 2px solid #000; /* Borde del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
 }
 
 .title {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 20px; /* Tamaño de fuente del título */
+    margin: 10px 0; /* Espacio alrededor del título */
 }
 
 .image {
     width: 200px; /* Ajusta el ancho de la imagen */
-    height: auto;
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
 }
 
 .input-container {
-    margin: 10px 0;
+    margin: 10px 0; /* Espacio alrededor del contenedor de entrada */
 }
 
 .input-container input[type="text"] {
-    width: 80%;
-    padding: 10px;
+    width: 80%; /* Ajusta el ancho del campo de entrada al 80% del contenedor */
+    padding: 10px; /* Espaciado interno del campo de entrada */
 }
 
 .button {
-    width:85%;
+    width: 85%; /* Ajusta el ancho del botón al 85% del contenedor */
     background-color: #E26A86; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer; /* Muestra un cursor de puntero al pasar el mouse sobre el botón */
 }
