@@ -1,0 +1,46 @@
+.container {
+    background-color:#E26A86;
+    display: flex;
+    align-items: center;
+    
+  }
+  .container p{
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .date-selector {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:20px ;
+    margin-right: 10px;
+    height: 30px;
+    width: 200px;
+  }
+  
+  .options-selector {
+    margin-top: 20px;
+    margin-bottom:20px ;
+    margin-right: 10px;
+    height: 30px;
+    width: 200px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    margin-bottom:20px ;
+    margin-right: 10px;
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .contain{
+    margin-left: 50px;
+  }
+
+  .button-container img{
+    height: 20px;
+    width: 20px;
+  }

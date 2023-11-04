@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces a las hojas de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/usuario.css">
+    <!-- Ícono de la pestaña del navegador -->
+    <link rel="shortcut icon" href="assets/iconos/icono.png">
+    <!-- Título de la página en la pestaña del navegador -->
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <img src="assets/logo/logo.png">
+            <div>
+                <h1 class="logo-text">Centro gerontológico integral</h1>
+                <p>Horarios de 10:00 am a 03:00 pm</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <!-- Opciones del menú de navegación -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="Taller.html">Talleres y servicios</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="Register.html">Registrarse</a></li>           
+        </ul>
+    </nav>
+    <!-- Formulario de inicio de sesión -->
+    <form action="loginusuario.php" method="post">
+    <div class="container">
+        <h2 class="title">Inicio de sesión</h2>
+        <img class="image" src="assets/logo/logo.png" alt="Imagen">
+        <div class="input-container">
+            <!-- Campo para ingresar el número de teléfono -->
+            <input type="text" placeholder="Teléfono" name="telefono" pattern="[0-9]{10}">
+        </div>
+        <button class="button">Iniciar sesión</button>
+        <p></p>No cuentas con un registro. <a href="Register.html">Regístrate</a><p></p>
+    </div>
+    </form>
+</body>
+</html>

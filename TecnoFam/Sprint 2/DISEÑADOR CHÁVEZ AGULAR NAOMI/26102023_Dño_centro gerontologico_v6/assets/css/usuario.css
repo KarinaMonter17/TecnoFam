@@ -1,0 +1,162 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #ffe599; /* Fondo de la barra de navegación */
+    color: #fff; /* Color del texto de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para el icono de menú desplegable en dispositivos móviles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: black; /* Color de las barras del icono de menú */
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    transition: 0.4s; /* Transición suave al hacer clic en el icono */
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilos para el logotipo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black; /* Color del texto del logotipo */
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+logo p {
+    color: black; /* Color del texto adicional del logotipo */
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+logo img {
+    width: 120px; /* Ancho de la imagen del logotipo */
+    margin-right: 10px; /* Espacio entre el logotipo y el texto */
+}
+
+.logo-text {
+    font-weight: bold; /* Estilo de fuente en negrita para el texto del logotipo */
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin-top: 2%;
+    margin-left: 35%;
+    background-color: #ffe599; /* Fondo del contenedor principal */
+    text-align: center;
+    width: 400px; /* Ancho del contenedor */
+    border: 2px solid #000; /* Borde del contenedor */
+    padding: 20px; /* Relleno interior del contenedor */
+}
+
+/* Estilos para el título del formulario */
+.title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.image {
+    width: 200px; /* Ancho de la imagen */
+    height: auto;
+}
+
+/* Estilos para el contenedor de entrada de texto */
+.input-container {
+    margin: 5px 0;
+}
+
+/* Estilos para la entrada de texto */
+.input-container input[type="text"] {
+    width: 80%;
+    padding: 10px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.button {
+    width: 85%;
+    background-color: #E26A86; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Estilos para los enlaces en el contenedor de imágenes */
+.image-container a {
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+/* Estilos para las imágenes en el contenedor */
+.image-container img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: 30px;
+}
+
+.image-container h4 {
+    text-align: center;
+    color: #000; /* Color del texto de encabezado en el contenedor de imágenes */
+}
